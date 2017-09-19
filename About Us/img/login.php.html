@@ -1,0 +1,24 @@
+
+<!-- saved from url=(0035)http://localhost/riji2/gd/login.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+</head>
+<body>
+	<form action="http://localhost/riji2/gd/login_act.php" method="post">
+		帐号：<input value="" type="text" name="usr"><br>
+		密码：<input type="password" name="pwd"><br>
+		验证码：<input type="text" name="auths">
+		&nbsp;<img id="authcode" src="./login.php_files/code.php" style="width: 100px; height:30px">
+		&nbsp;<a href="javascript::" onclick="refimg()">换一张</a>
+		<br>
+		<input type="checkbox" name="isreg" id="isreg" value="1">记住帐号<br>
+		<input type="submit" value="登录"><br>
+	</form>
+		<script>
+				function refimg(){
+						var imgobj=document.getElementById('authcode');
+						imgobj.src="code.php?"+Math.random();
+					}
+		</script>
+
+</body></html>
